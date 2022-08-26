@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <link rel="stylesheet" href="assignment4.css">
+    </head>
+    <body>
+        <fieldset>
+            <form onsubmit="return false">
+
+                <h1>Member Registration</h1>
+                <h2>Please complete all the fields below:</h2>
+
+                <label for="fName">First Name: </label>
+                <input type="text" id="fName" name="fName" size="50">
+
+                <label for="lName">Last Name: </label>
+                <input type="text" id="lName" name="lName" size="50">
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" size="50">
+
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address" size="50">
+
+                <label for="city">City: </label>
+                <input type="text" id="city" name="city" size="20">
+
+                <label for="pCode">Postal Code: </label>
+                <input type="text" id="pCode" name="pCode" size="10">
+
+                <label for="province">Province: </label>
+                <select id="province" name="province">
+                    <option value="NL">NL</option>
+                    <option value="PE">PE</option>
+                    <option value="NS">NS</option>
+                    <option value="NB">NB</option>
+                    <option value="QC">QC</option>
+                    <option value="ON">ON</option>
+                    <option value="MB">MB</option>
+                    <option value="SK">SK</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="YT">YT</option>
+                    <option value="NT">NT</option>
+                    <option value="NU">NU</option>
+                </select>
+
+                <label for="age">Age: </label>
+                <input type="number" step="1" id="age" name="age" min="1" max="130" size="3">
+
+                <label for="pwd1">Password: </label>
+                <input type="password" id="pwd1" name="pwd1">
+
+                <label for="pwd2">Confirm password: </label>
+                <input type="password" id="pwd2" name="pwd2">
+
+                <button id="register">Register Now</button>
+                <button id="clear" onclick="clearFields()">Clear Form</button>
+
+                <footer><p>&copy; Phelipe Matias da Silva - COMP125 - Assignment 4</p></footer>
+
+                <script src = "assignment4.js"></script>
+
+            </form>
+
+        </fieldset>
+    </body>
+</html>
